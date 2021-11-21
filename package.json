@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "source": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,19 @@
   },
   "homepage": "https://github.com/daxter-army/react-beautiful-calendar#readme",
   "devDependencies": {
-    "react": "^17.0.2"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
     "react": "^17.0.2"
